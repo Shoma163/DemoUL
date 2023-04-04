@@ -4,6 +4,39 @@
              xmlns:local="clr-namespace:DemoUL"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <DataTemplate x:Key="LvProduct">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Image Height="130" Source="TANCHELO.png"></Image>
+
+                <Border Grid.Column="1" CornerRadius="5" BorderThickness="1" BorderBrush="Black" Margin=" 5 0 0 0" Width="550">
+                    <TextBlock  Margin="5" FontSize="14">
+                        <Run Text="Наименование товара: " FontWeight="Bold"></Run>
+                        <Run Text="{Binding Name}"></Run>
+                        <LineBreak></LineBreak>
+                        <Run Text="Описание товара: "></Run>
+                        <LineBreak></LineBreak>
+                        <Run Text="{Binding Description}"></Run>
+                        <LineBreak></LineBreak>
+                        <Run Text="Производитель: "></Run>
+                        <Run Text="{Binding Manufacturer}"></Run>
+                        <LineBreak></LineBreak>
+                        <Run Text="Цена: "></Run>
+                        <Run Text="{Binding Cost}"></Run>
+                    </TextBlock>
+                </Border>
+                <Border Grid.Column="2" CornerRadius="5" BorderThickness="1" BorderBrush="Black"  Width="200" Margin="5 0 0 0">
+                    <TextBlock Margin=" 10 5 10 10"  FontSize="14">
+                    <Run Text="Наличие на складе: " FontWeight="Bold"></Run>
+                    <Run Text="{Binding QuantityInStock}"></Run>
+                    </TextBlock>
+                </Border>
+            </Grid>
+        </DataTemplate>
     </Application.Resources>
 </Application>

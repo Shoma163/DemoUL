@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Name="Search" TextChanged="Search_TextChanged"></TextBox>
+        <ListView Grid.Row="1" Name="LvProduct" ItemTemplate="{StaticResource LvProduct}"></ListView>
+
     </Grid>
 </Window>
