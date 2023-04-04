@@ -23,6 +23,9 @@ namespace DemoUL
         {
             InitializeComponent();
 
+
+            WindowState = WindowState.Maximized;
+
             connection = new user2Entities();
 
             BindingLvProduct();
