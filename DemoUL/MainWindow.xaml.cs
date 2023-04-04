@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace DemoUL
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private user2Entities connection;
