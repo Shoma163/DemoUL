@@ -14,7 +14,7 @@
 
                 <Image Height="130" Source="TANCHELO.png"></Image>
 
-                <Border Grid.Column="1" CornerRadius="5" BorderThickness="1" BorderBrush="Black" Margin=" 5 0 0 0" Width="550">
+                <Border Grid.Column="1" CornerRadius="5" BorderThickness="1" BorderBrush="Black" Margin=" 5 0 0 0" Width="1450">
                     <TextBlock  Margin="5" FontSize="14">
                         <Run Text="Наименование товара: " FontWeight="Bold"></Run>
                         <Run Text="{Binding Name}"></Run>
