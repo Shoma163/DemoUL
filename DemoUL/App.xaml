@@ -7,14 +7,14 @@
         <DataTemplate x:Key="LvProduct">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Image Height="130" Source="TANCHELO.png"></Image>
+                <Image Height="160" Source="TANCHELO.png"></Image>
 
-                <Border Grid.Column="1" CornerRadius="5" BorderThickness="1" BorderBrush="Black" Margin=" 5 0 0 0" Width="1450">
+                <Border Grid.Column="1" CornerRadius="5" BorderThickness="1" BorderBrush="Black" Margin=" 5 0 0 0">
                     <TextBlock  Margin="5" FontSize="14">
                         <Run Text="Наименование товара: " FontWeight="Bold"></Run>
                         <Run Text="{Binding Name}"></Run>
@@ -30,7 +30,7 @@
                         <Run Text="{Binding Cost}"></Run>
                     </TextBlock>
                 </Border>
-                <Border Grid.Column="2" CornerRadius="5" BorderThickness="1" BorderBrush="Black"  Width="200" Margin="5 0 0 0">
+                <Border Grid.Column="2" CornerRadius="5" BorderThickness="1" BorderBrush="Black"  Margin="5 0 0 0">
                     <TextBlock Margin=" 10 5 10 10"  FontSize="14">
                     <Run Text="Наличие на складе: " FontWeight="Bold"></Run>
                     <Run Text="{Binding QuantityInStock}"></Run>
